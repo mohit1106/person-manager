@@ -63,7 +63,7 @@ person-manager/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/person-manager.git
+git clone https://github.com/mohit1106/person-manager.git
 cd person-manager
 ```
 
@@ -122,12 +122,6 @@ Base URL: `http://localhost:5000/api/persons`
 
 ---
 
-## 📸 UI Screenshots
-
-> Coming Soon: Add screenshots or a demo GIF of the application.
-
----
-
 ## 🐞 Troubleshooting
 
 - Ensure MongoDB is running locally or the Atlas URI is correct.
@@ -138,7 +132,7 @@ Base URL: `http://localhost:5000/api/persons`
 
 ## 🛡️ License
 
-MIT License © 2025 [Your Name](https://github.com/your-username)
+MIT License © 2025 [Mohit Verma](https://github.com/mohit1106)
 
 ---
 
