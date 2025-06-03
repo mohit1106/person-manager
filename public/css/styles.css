@@ -1,0 +1,13 @@
+/* public/css/styles.css */
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  margin-top: 1rem;
+}
+
+h1, h2 {
+  font-weight: 500;
+}

@@ -1,0 +1,58 @@
+<% /* views/person/list.ejs */ %>
+
+<div class="row justify-content-center">
+  <div class="col-lg-10">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h1 class="h3">All Persons</h1>
+      <a href="/person/new" class="btn btn-success">
+        <i class="bi bi-person-plus-fill"></i> Add Person
+      </a>
+    </div>
+
+    <% if (people.length === 0) { %>
+      <div class="alert alert-info">
+        No persons found. <a href="/person/new" class="alert-link">Add one</a>.
+      </div>
+    <% } else { %>
+      <div class="card shadow-sm">
+        <div class="card-body p-0">
+          <table class="table table-striped table-hover mb-0 align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Mobile</th>
+                <th style="width: 150px;">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% people.forEach((person) => { %>
+                <tr>
+                  <td><%= person.name %></td>
+                  <td><%= person.age %></td>
+                  <td><%= person.gender %></td>
+                  <td><%= person.mobile %></td>
+                  <td>
+                    <a
+                      href="/person/<%= person._id %>/edit"
+                      class="btn btn-sm btn-warning me-1"
+                    >
+                      Edit
+                    </a>
+                    <a
+                      href="/person/<%= person._id %>/delete"
+                      class="btn btn-sm btn-danger"
+                    >
+                      Delete
+                    </a>
+                  </td>
+                </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</div>

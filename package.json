@@ -1,0 +1,22 @@
+{
+  "name": "person-manager",
+  "version": "1.0.0",
+  "description": "A RESTful person manager with Node.js, Express, MongoDB, EJS & Bootstrap",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
